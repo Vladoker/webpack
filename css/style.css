@@ -1,0 +1,23 @@
+@import "~normalize.css"; /*позволяет браузерам отображать все элементы более согласованно и в соответствии с современными стандартами. Он точно нацелен только на стили, которые нужно нормализовать.*/
+@import "oswald.css";
+
+body {
+    font-family: "Oswald";
+}
+.container {
+    padding-top: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo {
+    background-image: url("../src/webpack.png");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
