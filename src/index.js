@@ -4,6 +4,8 @@ import json from "./myJson.json"; // можно импортировать json 
 import image from "./webpack.png"; // можно импортировать картинки
 import xmlFile from "./xmlFile.xml"; // возможность работать с xml
 import "@pathToStyleDir/style.css"; // или "../css/style.css"
+import "../css/less.less";
+import "../css/scss.scss";
 
 
 
@@ -13,4 +15,4 @@ const message = new myMessage("hello frate");
 // alert(json[0].name + " " + json[1].surname);
 // document.body.innerHTML += `<span>${image}</span>`;
 // console.log(xmlFile);
-$("body").css("background-color", "darkkhaki");
+$("body").css("background-color", "blue");
