@@ -52,7 +52,7 @@ module.exports = {
   // context: path.resolve(__dirname, "src"), можем указать папку src по умолчанию
   mode: "development",//по умолчанию собирает в минифицированную production
   entry: {
-    main: "./src/index.js",
+    main: "./src/index.js", //или для babel ["@babel/polyfill", "./src/index.js"]
     analytics: "./src/analytics.js"
   },
   output: {
@@ -109,7 +109,19 @@ module.exports = {
       {
         test: /\.csv$/,
         use: ["csv-loader"] // npm i -D csv-loader для возможности импортировать csv формат в js файлы
-      }
+      },
+      // { 
+      //   test: /\.js$/, // настройка для babel
+      //   exclude: /node_modules/,
+      //   loader: {
+      //     loader: "babel-loader",
+      //     options: {
+      //       presets: [
+      //         "@babel/preset-env"
+      //       ]
+      //     }
+      //   }
+      // }
     ]
   }
 };

@@ -1,4 +1,4 @@
-import $ from "jquery";
+// import $ from "jquery";
 function clickAnalytics() {
     let counter = 0;
     let destroyed = false;
@@ -13,7 +13,7 @@ function clickAnalytics() {
             destroyed = true;
         },
         getClicks() {
-            $("body").css("background-color", "red");
+            // $("body").css("background-color", "red");
             if (destroyed) {
                 return "События аналитики удаленно"
             }

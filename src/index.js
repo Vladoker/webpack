@@ -1,4 +1,4 @@
-import * as $ from 'jquery'; // переводится как имортируем всё в переменную $ или можно import $ from "jquery";
+//import * as $ from 'jquery'; // переводится как имортируем всё в переменную $ или можно import $ from "jquery";
 import myMessage from './myscript';
 import json from "./myJson.json"; // можно импортировать json файлы
 import image from "./webpack.png"; // можно импортировать картинки
@@ -8,11 +8,10 @@ import "../css/less.less";
 import "../css/scss.scss";
 
 
-
 const message = new myMessage("hello frate");
 
 // alert(message);
 // alert(json[0].name + " " + json[1].surname);
 // document.body.innerHTML += `<span>${image}</span>`;
 // console.log(xmlFile);
-$("body").css("background-color", "blue");
+// $("h1").text("zzzzz");
